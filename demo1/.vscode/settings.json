@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "app.h": "c",
+        "api_key.h": "c"
+    }
+}

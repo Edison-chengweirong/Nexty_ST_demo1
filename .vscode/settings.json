@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "usart.h": "c",
+        "app.h": "c",
+        "api_led.h": "c",
+        "bsp_uart.h": "c"
+    }
+}

@@ -1,0 +1,11 @@
+/*
+ * BSP_PWM.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: edison
+ */
+#include "BSP_PWM.h"
+
+
+uint16_t duty_num1 = 10;
+uint16_t duty_num2 = 20;

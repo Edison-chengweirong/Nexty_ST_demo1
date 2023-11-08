@@ -1,0 +1,33 @@
+/*
+ * APP.c
+ *
+ *  Created on: Oct 12, 2023
+ *      Author: edison
+ */
+
+
+#include "APP.h"
+
+extern  uint8_t uart_oder;
+/*
+ * APP.c
+ *APP
+ *用户执行函数
+ *  Created on: Oct 20, 2023
+ *      Author: edison
+ */
+
+void APP()
+{
+    API_KEY();
+    
+    usart_orderfun();
+    if(uart_oder == 1)
+    {
+        API_Green_LED_TOG();
+        uart_oder= 0;
+    }
+
+    pwh_put();
+
+}

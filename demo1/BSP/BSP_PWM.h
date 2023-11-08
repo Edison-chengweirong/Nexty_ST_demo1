@@ -1,0 +1,20 @@
+/*
+ * BSP_PWM.h
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: edison
+ */
+
+#ifndef BSP_PWM_H_
+#define BSP_PWM_H_
+
+#include "main.h"
+#include "tim.h"
+#include "usart.h"
+#include "gpio.h"
+
+
+
+void BSP_pwhLED_put();
+
+#endif /* BSP_PWM_H_ */

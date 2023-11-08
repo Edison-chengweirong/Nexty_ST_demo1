@@ -1,0 +1,35 @@
+/*
+ * BSP_PWM.c
+ *
+ *  Created on: Nov 3, 2023
+ *      Author: edison
+ */
+#include "BSP_PWM.h"
+
+
+
+
+//HAL_TIM_PWM_Start(&htim3,TIM_CHANNEL_2);
+//HAL_TIM_PWM_Start(&htim4,TIM_CHANNEL_2);
+
+void pwh_put()
+{
+#if 0
+	uint16_t duty_num1 = 10;
+	uint16_t duty_num2 = 20;
+	HAL_Delay(50);
+			duty_num1=duty_num1+10;
+			duty_num2=duty_num2+20;
+			if(duty_num1>500)
+			{
+				duty_num1=0;
+			}
+			__HAL_TIM_SetCompare(&htim3,TIM_CHANNEL_2,duty_num1);
+			if(duty_num2>500)
+			{
+				duty_num2=0;
+			}
+			__HAL_TIM_SetCompare(&htim4,TIM_CHANNEL_2,duty_num2);
+#endif
+
+}

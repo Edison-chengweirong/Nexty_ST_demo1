@@ -1,0 +1,23 @@
+09:33:26 **** Incremental Build of configuration Debug for project demo1 ****
+make -j16 all 
+arm-none-eabi-gcc "../BSP/BSP_PWM.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F401xE -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/projects/ST/demo1/demo1/BSP" -I"D:/projects/ST/demo1/demo1/API" -I"D:/projects/ST/demo1/demo1/APP" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"BSP/BSP_PWM.d" -MT"BSP/BSP_PWM.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "BSP/BSP_PWM.o"
+arm-none-eabi-gcc -o "demo1.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\projects\ST\demo1\demo1\STM32F401RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="demo1.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: demo1.elf
+ 
+arm-none-eabi-size   demo1.elf 
+arm-none-eabi-objdump -h -S  demo1.elf  > "demo1.list"
+arm-none-eabi-objcopy  -O ihex  demo1.elf  "demo1.hex"
+arm-none-eabi-objcopy  -O binary  demo1.elf  "demo1.bin"
+   text	   data	    bss	    dec	    hex	filename
+  15436	     28	   2228	  17692	   451c	demo1.elf
+Finished building: default.size.stdout
+ 
+Finished building: demo1.bin
+Finished building: demo1.list
+Finished building: demo1.hex
+ 
+ 
+ 
+
+09:33:28 Build Finished. 0 errors, 0 warnings. (took 2s.222ms)
+
